@@ -13,13 +13,13 @@ function CartTablePtr18(props){
               </tr>
             </thead>
             <tbody>
-              {this.props.cartItems.map((cartItem, index) =>(
+              {props.cartItems.map((cartItem, index) =>(
                   <CartItemPtr18
                   key={index}
                   name={cartItem.name}
                   quantity={cartItem.quantity}
                   price={cartItem.price}
-                  delete={this.props.delete} />
+                  delete={props.delete} />
               ))}
             </tbody>
           </table>
