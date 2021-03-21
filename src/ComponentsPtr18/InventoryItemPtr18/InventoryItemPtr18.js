@@ -6,8 +6,8 @@ function InventoryItemPtr18(props){
             <td>{props.sku}</td>
             <td>{props.name}</td>
             <td>{props.quantity}</td>
-            <td>{props.price}</td>
-            <td><button id={props.id} onClick={props.add} className="btn btn-primary">Add</button></td>
+            <td>${props.price}</td>
+            <td><button id={props.sku} onClick={props.add} className={(props.quantity >0)?"btn btn-primary": "btn btn-secondary"} >{(props.quantity>0)?"Add":"Out of Stock"}</button></td>
         </tr>
     )
 }
