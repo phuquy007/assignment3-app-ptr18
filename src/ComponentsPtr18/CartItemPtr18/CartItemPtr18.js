@@ -5,8 +5,8 @@ function CartItemPtr18(props){
         <tr>
             <td>{props.name}</td>
             <td>{props.quantity}</td>
-            <td>{props.price}</td>
-            <td><button id={props.id} onClick={props.delete} className="btn btn-danger">Delete</button></td>
+            <td>${props.price}</td>
+            <td><button id={props.sku} onClick={props.delete} className="btn btn-danger">Delete</button></td>
         </tr>
     )
 }
