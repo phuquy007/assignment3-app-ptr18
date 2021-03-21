@@ -14,14 +14,14 @@ function InventoryTablePtr18(props){
               </tr>
             </thead>
             <tbody>
-              {this.props.inventoryItems.map((inventoryItem, index) =>(
+              {props.inventoryItems.map((inventoryItem, index) =>(
                   <InventoryItemPtr18
                   key={index}
                   sku={inventoryItem.sku}
                   name={inventoryItem.name}
                   quantity={inventoryItem.quantity}
                   price={inventoryItem.price}
-                  add={this.props.add} />
+                  add={props.add} />
               ))}
             </tbody>
           </table>
