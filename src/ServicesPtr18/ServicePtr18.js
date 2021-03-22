@@ -1,4 +1,4 @@
-const API_URL = "http://ec2-3-236-87-87.compute-1.amazonaws.com:8000/";
+const API_URL = "http://ec2-18-232-51-38.compute-1.amazonaws.com:8000/";
 
 export async function getInventory() {
   return fetch(`${API_URL}inventoryPtr18`, {
